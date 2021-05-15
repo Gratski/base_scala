@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=artists
+      - POSTGRES_USER=artist
+      - POSTGRES_PASSWORD=artist
+    ports:
+      - 5432:5432
